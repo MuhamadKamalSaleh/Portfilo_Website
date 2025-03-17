@@ -1,0 +1,122 @@
+body {
+  background-image: url(Pic/white.jpg);
+  background-size: cover;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  overflow: hidden;
+  /* over flowka nayale scrol betn  */
+}
+
+#UL {
+  display: inline-block;
+  float: right;
+  margin: 0px 40px;
+  margin-right: 70px;
+}
+
+nav {
+  color: snow;
+  word-spacing: 20px;
+  line-height: 70px;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  background-image: url(Pic/P1.jpg);
+}
+
+a {
+  text-decoration: none;
+  color: snow;
+  position: relative;
+}
+
+.list {
+  list-style: none;
+  display: inline-block;
+  font-size: 17px;
+  font-weight: 700;
+}
+label {
+  margin: 0px 40px;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+a::after {
+  content: "";
+  background-color: snow;
+  width: 0%;
+  left: 0px;
+  height: 3px;
+  bottom: -7px;
+  transition: 0.3s;
+}
+
+a:hover:after {
+  width: 100%;
+  position: absolute;
+}
+a:hover {
+  font-weight: 790;
+}
+
+/* ///////////////// */
+
+#All {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+#Base {
+  display: flex;
+  justify-content: space-ar;
+  gap: 200px;
+  margin-left: 250px;
+  margin-top: 100px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+#range {
+  float: right;
+  resize: none;
+  overflow: none;
+}
+
+#skilInfo {
+  display: flex;
+  gap: 240px;
+  width: 100%;
+}
+
+.out {
+  width: 100%;
+  height: 10px;
+  background-color: lightgrey;
+  border-radius: 15px;
+}
+.in {
+  width: 100%;
+  height: 10px;
+  background-color: #00a78e;
+  border-radius: 20px;
+}
+
+#head {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  margin: 0px 10%;
+  margin-top: 30px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 30px;
+  color: #00a78e;
+}
+
+
+
+
+/* //// */
+
+/* ///// */

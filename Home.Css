@@ -1,0 +1,151 @@
+body {
+  background-image: url(Pic/P1.jpg);
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  overflow: hidden;
+  /* over flowka nayale scrol betn  */
+}
+
+ul {
+  display: inline-block;
+  float: right;
+  margin: 0px 40px;
+  margin-right: 70px;
+}
+
+nav {
+  color: snow;
+  word-spacing: 20px;
+  line-height: 70px;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: snow;
+  position: relative;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+  font-size: 17px;
+  font-weight: 700;
+}
+label {
+  margin: 0px 40px;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+a::after {
+  content: "";
+  background-color: snow;
+  width: 0%;
+  left: 0px;
+  height: 3px;
+  bottom: -7px;
+  transition: 0.3s;
+}
+
+a:hover:after {
+  width: 100%;
+  position: absolute;
+}
+a:hover {
+  font-weight: 790;
+}
+
+/* /////////////// */
+
+.parrent {
+  color: snow;
+  font-size: 34px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+}
+
+.WriteText {
+  padding: 20vh 13vw;
+}
+
+span {
+  color: #fff724;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  float: right;
+  object-fit: cover;
+}
+
+.WriteText {
+  flex: 1;
+}
+.img {
+  flex: 1;
+  padding: 0px 50px;
+  padding-top: 20px;
+}
+h1 {
+  margin: 0px;
+  padding: 0px;
+}
+
+.icon {
+  margin: 100px;
+  word-spacing: 20px;
+}
+.fa-brands {
+  color: snow;
+  font-size: 42px;
+}
+
+@media only screen and (max-width: 768px) {
+  nav {
+    position: relative;
+    height: 70px;
+    display: none;
+  }
+
+  label {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-80%);
+  }
+
+  ul {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 70px);
+    padding: 0;
+    margin: 0;
+    background-color: #1c1c1c;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease-in-out;
+  }
+
+  ul.show {
+    transform: translateX(0%);
+  }
+
+  li {
+    margin: 10px 0;
+  }
+
+  a {
+    color: snow;
+    font-size: 24px;
+  }
+}

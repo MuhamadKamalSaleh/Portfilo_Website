@@ -1,0 +1,135 @@
+body {
+  background-color: snow;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  overflow: hidden;
+  background-image: url(Pic/white.jpg);
+  /* over flowka nayale scrol betn  */
+}
+
+#UL {
+  display: inline-block;
+  float: right;
+  margin: 0px 40px;
+  margin-right: 70px;
+}
+
+nav {
+  color: snow;
+  word-spacing: 20px;
+  line-height: 70px;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  background-image: url(Pic/P1.jpg);
+}
+
+a {
+  text-decoration: none;
+  color: snow;
+  position: relative;
+}
+
+.list {
+  list-style: none;
+  display: inline-block;
+  font-size: 17px;
+  font-weight: 700;
+}
+label {
+  margin: 0px 40px;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+a::after {
+  content: "";
+  background-color: snow;
+  width: 0%;
+  left: 0px;
+  height: 3px;
+  bottom: -7px;
+  transition: 0.3s;
+}
+
+a:hover:after {
+  width: 100%;
+  position: absolute;
+}
+a:hover {
+  font-weight: 790;
+}
+
+/* ///////////////// */
+
+#All {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+#Left {
+  width: 500px;
+  height: 500px;
+  background-image: url(Pic/mee.jpg);
+  background-size: cover;
+  object-fit: cover;
+  margin: 10px;
+  flex: 0.7;
+  border-radius: 63% 37% 68% 32% / 36% 73% 27% 64%;
+   transition: border-radius 500ms ease-in-out;
+  margin: 50px 30px;
+  justify-content: center;
+}
+#Left:hover {
+  border-radius:25% 75% 24% 76% / 76% 31% 69% 24%
+}
+
+
+
+#Right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin: 50px 0px;
+}
+
+.R {
+  display: flex;
+  gap: 100px;
+}
+
+#li {
+  margin-top: 50px;
+  list-style: none;
+}
+
+#Text {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #00a78e;
+  font-family: "Montserrat", sans-serif;
+}
+
+.fa-solid {
+  color: #00a78e;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+strong {
+  font-size: 22px;
+  font-weight: 700;font-family: "Montserrat", sans-serif;
+}
+
+span{
+  font-size: 17px;
+  font-weight: 700;
+  color: #00a78e;font-family: "Montserrat", sans-serif;
+}
+
+/* //// */
+
+/* ///// */
